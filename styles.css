@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+
+}
+
+main {
+
+    width: 100vw;
+    height: 70vh;
+
+}
+
+#logo-topo {
+    height: 100%;
+    width: 126.60px;
+    position: absolute;
+    left: 0;
+
+}
+
+header {
+    width: 100vw;
+    height: 15vh;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    flex-direction: row;
+    width: 750px;
+    height: 750px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.galeria>article {
+
+    border: 1px solid black;
+
+}
+
+.segunda-parte {
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+}
+
+#img1 {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+}
+
+#img2 {
+    grid-row: 3 / span 2;
+    grid-column: 3 / span 2;
+}
+
+#img3 {
+    grid-row: 5 / span 2;
+    grid-column: 5 / span 2;
+}
+
+#img4 {
+    grid-row: 7 / span 2;
+    grid-column: 7 / span 2;
+}
+
+
+footer {
+    width: 100vw;
+    height: 15vh;
+    background-color: bisque;
+    position: absolute;
+    bottom: 0;
+}
+
+#botao-lateral a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 0 5px 5px 0px;
+    right: -125px;
+    transition: 1s;
+    border-radius: 25px;
+    border: 1px solid transparent;
+
+    width: 150px;
+    margin-left: 10px;
+    position: fixed;
+
+}
+
+
+#botao-lateral i {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 13px;
+    color: #987544;
+    padding-top: 10PX;
+    align-content: center;
+}
+
+#botao-lateral a:hover {
+    right: 0px;
+    text-align: center;
+}
+
+#botao-lateral a:hover i {
+    display: ;
+}
+
+#topo-pagina {
+
+    background-color: white;
+    opacity: 75%;
+    width: 60px;
+    right: 0;
+
+}
