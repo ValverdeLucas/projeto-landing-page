@@ -82,16 +82,23 @@ header {
     transition: all 0.5s ease-in-out
 }
 
-#instagram-header {
-    transition: all 0.55s ease-in-out
-}
-
 #facebook-header:hover {
     transform: scale(1.2)
 }
 
+#instagram-header {
+    transition: all 0.55s ease-in-out
+}
 
 #instagram-header:hover {
+    transform: scale(1.2)
+}
+
+#whatsapp-header{
+    transition: all 0.5s ease-in-out
+}
+
+#whatsapp-header:hover{
     transform: scale(1.2)
 }
 
@@ -164,7 +171,8 @@ header {
 }
 
 .carrossel {
-    border: 1px solid black;
+    border: 1px solid #664229;
+    padding: 10px;
 }
 
 #novidades {
@@ -200,6 +208,9 @@ header {
 #quem-somos {
     grid-row: 1 / span 6;
     grid-column: 1 / span 4;
+    border: #664229 1px solid;
+    padding: 10px;
+
 }
 
 
@@ -218,53 +229,42 @@ header {
     background-color: white;
 }
 
-
-
-
-
-/* 
-#botao-lateral a {
-    display: flex;
-    text-decoration: none;
+#contato{
+    border: #664229 1px solid;
     text-align: center;
-    justify-content: center;
-    border-radius: 0 5px 5px 0px;
-    right: 0;
-    transition: 1s;
-    border-radius: 25px;
-    border: 1px solid transparent;
-    width: 50px;
-    margin-left: 10px;
-    position: absolute;
-    bottom: -1680px;
+
 }
 
-#botao-lateral i {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-right: 25px;
-    padding-left: 25px;
-    font-size: 13px;
-    color: #987544;
-    padding-top: 10PX;
-    align-content: center;
+.formulario{
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    border-top: #664229 1px solid;
+    padding: 30px;
+    
 }
 
-#botao-lateral a:hover {
-    right: 0px;
-    text-align: center;
+.formulario  select{
+    height: 40px;
+    width: 80%;
+    /* border: #664229 1px solid; */
+
 }
 
-#botao-lateral a:hover i {
-    display: ;
+.formulario  input{
+    height: 40px;
+    width: 80%;
+    /* border-radius: 5px; */
+    /* border: #664229 1px solid; */
+
 }
 
-#topo-pagina {
-    background-color: white;
-    opacity: 75%;
-    width: 60px;
-    right: 0;
+#mensagem{
+    margin-top: 10px;
+    height: 125px;
+    margin-bottom: 10px;
 }
- */
+
 
 
 
@@ -281,49 +281,60 @@ footer {
     left: 0;
     right: 0; */
     border: #987544 1px solid;
-    gap: 75px
+    gap: 75px;
+    color: #664229
 }
 
 .footer-1 {
     display: flex;
     gap: 15px;
     justify-self: flex-end;
-    margin-left: 4vw;
+    margin-left: 3.75vw;
 }
-
-.footer-cnpj{
-    width: 300px;
-}
-
 
 .footer-2 {
     display: flex;
     /* flex-direction: row; */
     margin-left: 15vw;
-    gap: 350px;
+    gap: 250px;
     justify-content: space-around;
 }
 
+.footer-2 a {
+    width: 100px;
+    align-self: center;
+}
+
 #facebook-footer {
-    transition: all 0.5s ease-in-out
-}
-
-#whatsapp-footer{
-    transition: all 0.5s ease-in-out
-}
-
-#instagram-footer {
-    transition: all 0.5s ease-in-out
+    transition: all 0.5s ease-in-out;
 }
 
 #facebook-footer:hover {
     transform: scale(1.2)
 }
 
+#instagram-footer {
+    transition: all 0.5s ease-in-out
+}
+
+#instagram-footer:hover {
+    transform: scale(1.2)
+}
+
+#whatsapp-footer{
+    transition: all 0.5s ease-in-out
+}
+
 #whatsapp-footer:hover{
     transform: scale(1.2)
 }
 
-#instagram-footer:hover {
+#topo-pagina {
+    width: 60px;
+    justify-self: flex-end;
+    transition: all 0.5s ease-in-out
+}
+
+#topo-pagina:hover {
     transform: scale(1.2)
 }
