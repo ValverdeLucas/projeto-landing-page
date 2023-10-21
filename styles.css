@@ -7,7 +7,6 @@
 
 a{
     color:#664229;
-
 }
 
 h1{
@@ -25,10 +24,9 @@ body {
 
 main {
     width: 100%;
-    /* flex-grow: 1; */
     background-color: #664229;
     padding-top: 40px;
-
+    padding-bottom: 40px;
 }
 
 footer a{
@@ -59,7 +57,6 @@ header {
     width: 150px;
     position: absolute;
     left: 30px;
-    /* padding-left: 50px; */
 }
 
 #icons {
@@ -112,7 +109,6 @@ header {
     grid-template-rows: repeat(8, 1fr);
     grid-gap: 10px;
     padding: 10px;
-    /* flex-direction: row; */
     width: 1250px;
     height: 1000px;
     margin: auto;
@@ -165,7 +161,6 @@ header {
     grid-gap: 30px;
     width: 1250px;
     margin: auto;
-
 }
 
 #equipe{
@@ -174,7 +169,6 @@ header {
     padding: 15px;
     border: 1px solid #664229;
     background-color: white;
-
 }
 
 
@@ -268,7 +262,6 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     margin: auto;
-    /* background-color: white; */
 }
 
 #localizacao{
@@ -277,7 +270,6 @@ header {
 }
 
 #contato{
-    /* padding: 15px; */
     border: #664229 1px solid;
     text-align: center;
     background-color: white;
@@ -287,30 +279,31 @@ header {
 #contato h1{
     margin-bottom: 12px;
     margin-top: 12px;
-    
+}
+
+.retorno-positivo{
+    color: green;
+}
+
+.retorno-negativo{
+    color: #b70000;
 }
 
 .formulario{
-    /* display: flex; */
-    flex-direction: column;
     align-items: center;
     border-top: #664229 1px solid;
     padding: 30px;
+    margin-bottom: -15px;
 }
 
 .formulario  select{
     height: 40px;
     width: 80%;
-    /* border: #664229 1px solid; */
-
 }
 
 .formulario  input{
     height: 40px;
     width: 80%;
-    /* border-radius: 5px; */
-    /* border: #664229 1px solid; */
-
 }
 
 #mensagem{
@@ -330,10 +323,6 @@ footer {
     width: 100%;
     height: 15vh;
     align-items: center;
-    /* top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; */
     border: #987544 1px solid;
     gap: 75px;
     color: #664229
@@ -348,7 +337,6 @@ footer {
 
 .footer-2 {
     display: flex;
-    /* flex-direction: row; */
     margin-left: 15vw;
     gap: 250px;
     justify-content: space-around;
@@ -392,3 +380,41 @@ footer {
 #topo-pagina:hover {
     transform: scale(1.2)
 }
+
+
+
+/* /////////////////////////////////////////////// */
+
+
+
+.FAQ-pagina{
+    background-color: white;
+    padding: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.FAQ-pagina h1{
+    font-size: xx-large;
+}
+
+.FAQ-pagina li{
+    font-size: larger;
+}
+
+.FAQ-pagina p{
+    font-size: large;
+}
+
+
+
+/* /////////////////////////////////////////////// */
+
+.pedido-online{
+    background-color: white;
+    padding: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+

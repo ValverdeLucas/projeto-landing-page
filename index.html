@@ -104,24 +104,24 @@
 
                 <h1>Fale Conosco/Contato</h1>
 
-                <article class="formulario">
+                <article class="formulario" id="formulario">
                     <form action="#"></form>
 
                     <input type="text" name="nome" id="nome" placeholder="Nome completo"></br>
                     <input type="text" name="email" id="email" placeholder="E-mail"></br>
-                    <input type="tel" name="telefone" id="telefone" pattern="[0-9]{2}-[0-9]{4}-[0-9]{5}" required
+                    <input type="tel" name="telefone" id="telefone"
                         placeholder="(DDD) xxxx-xxxxx"></br>
-                    <select name="assunto">
+                    <select name="assunto" id="assunto">
                         <option value="sugestao">Sugestão</option>
                         <option value="reclamacao">Reclamação</option>
                         <option value="outros">Outros</option>
                     </select><br />
                     <input type="text" name="mensagem" id="mensagem" placeholder="Digite sua mensagem."></br>
-                    <input type="submit" id="submit">
+                    <input type="submit" id="submit" onclick="contato(event)">
                 </article>
-
+                <p id="retorno"></p>
             </article>
-        </section></br></br>
+        </section>
 
     </main>
 
