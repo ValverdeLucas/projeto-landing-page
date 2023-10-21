@@ -11,7 +11,7 @@ a{
 }
 
 h1{
-    font-size: x-large;
+    font-size: xx-large;
     font-family: Arial, Helvetica, sans-serif;
     color:#664229;
 }
@@ -114,7 +114,7 @@ header {
     padding: 10px;
     /* flex-direction: row; */
     width: 1250px;
-    height: 1250px;
+    height: 1000px;
     margin: auto;
     border: 1px solid black;
     background-color: white;
@@ -163,54 +163,97 @@ header {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 30px;
-    padding: 15px;
     width: 1250px;
     margin: auto;
-    border: #987544 1px solid;
+
+}
+
+#equipe{
+    grid-row: 5 / span 2;
+    grid-column: 1 / span 4;
+    padding: 15px;
+    border: 1px solid #664229;
+    background-color: white;
+
+}
+
+
+#quem-somos {
+    grid-row: 1 / span 4;
+    grid-column: 1 / span 4;
+    border: #664229 1px solid;
+    padding: 15px;
     background-color: white;
 }
 
-.carrossel {
-    border: 1px solid #664229;
-    padding: 10px;
+#quem-somos p{
+    font-size: large;
 }
 
-#novidades {
-    grid-row: 1 / span 2;
-    grid-column: 7 / span 2;
+
+.carrossel {
+    border: 1px solid #664229;
+    padding: 15px;
+    background-color: white;
 }
 
 #img-carrossel-1 {
     grid-row: 1 / span 2;
+    grid-column: 7 / span 2;
+
+}
+
+#novidades {
+
+    grid-row: 1 / span 2;
+    grid-column: 5 / span 2;
+}
+
+#novidades ul{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: larger;
+}
+
+#img-carrossel-2 {
+
+    grid-row: 3 / span 2;
     grid-column: 5 / span 2;
 }
 
 #nossa-loja {
     grid-row: 3 / span 2;
-    grid-column: 5 / span 2;
+    grid-column: 7 / span 2;
+
 }
 
-#img-carrossel-2 {
-    grid-row: 3 / span 2;
-    grid-column: 7 / span 2;
-}
-
-#pedido {
-    grid-row: 5 / span 2;
-    grid-column: 7 / span 2;
+#nossa-loja p{
+    margin-top: 15px;
 }
 
 #img-carrossel-3 {
     grid-row: 5 / span 2;
-    grid-column: 5 / span 2;
+    grid-column: 7 / span 2;
+
 }
 
-#quem-somos {
-    grid-row: 1 / span 6;
-    grid-column: 1 / span 4;
-    border: #664229 1px solid;
-    padding: 10px;
+#pedido {
 
+    grid-row: 5 / span 2;
+    grid-column: 5 / span 2;
+    position: relative;
+    font-size: large;
+}
+
+#pedido p{
+    margin-top: 15px;
+    font-size: large;
+}
+
+#pedido-link{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
 }
 
 
@@ -220,19 +263,31 @@ header {
 .terceira-parte {
     width: 1250px;
     height: 52vh;
-    padding: 15px;
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     margin: auto;
+    /* background-color: white; */
+}
+
+#localizacao{
+    padding: 15px;
     background-color: white;
 }
 
 #contato{
+    /* padding: 15px; */
     border: #664229 1px solid;
     text-align: center;
+    background-color: white;
 
+}
+
+#contato h1{
+    margin-bottom: 12px;
+    margin-top: 12px;
+    
 }
 
 .formulario{
@@ -241,7 +296,6 @@ header {
     align-items: center;
     border-top: #664229 1px solid;
     padding: 30px;
-    
 }
 
 .formulario  select{
