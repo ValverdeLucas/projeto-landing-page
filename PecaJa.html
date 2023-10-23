@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4Food - Coma bem sem sair de casa!</title>
+    <title>4Food - Faça seu pedido!</title>
     <script src="script.js" defer></script>
     <link href="styles.css" rel="stylesheet" type="text/css">
     </link>
@@ -15,8 +15,9 @@
 <body>
 
     <header>
-        <img src="Medias/logo.jpg" alt="logo 4Food" height="200px" width="200px" id="logo-topo">
-        <section id="icons">
+        <a href="./index.html"><img src="Medias/logo.jpg" alt="logo 4Food" id="logo-topo"></a>
+        <h1>Faça o seu pedido!</h1>
+        <section id="icons-header">
             <a href="https://instagram.com" target="_blank"><img src="Medias/instagram-icone.png" height="40px"
                     width="40px" id="instagram-header"></a>
             <a href="https://facebook.com" target="_blank"><img src="Medias/facebook-icone.png" height="40px"
@@ -24,45 +25,269 @@
             <a href="https://whatsapp.com" target="_blank"><img src="Medias/whatsapp-icone.png" height="40px"
                     width="40px" id="whatsapp-header"></a>
         </section>
-
-        <nav></nav>
     </header>
 
     <main>
 
-        <article class="pedido-online" id="pedido-online">
-            <input type="checkbox" id="banana" name="banana" value="banana">
-            <label for="banana">Banana</label>
-            <input type="checkbox" id="uva" name="uva" value="uva">
-            <label for="uva">Uva</label>
-            
-        </article>
+        <section class="pedido-online" id="pedido-online">
+            <form class="caixa-pedido" action="#">
+                <section id="Frutas">
+                    <h1>Frutas</h1>
+                    <label for="banana">Banana</label>
+                    <select name="banana" id="banana">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
 
+                    <label for="uva">Uva</label>
+                    <select name="uva" id="uva">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="maca">Maçã</label>
+                    <select name="maca" id="maca">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="laranja">Laranja</label>
+                    <select name="laranja" id="laranja">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="melancia">Melancia</label>
+                    <select name="melancia" id="melancia">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section><br />
+
+
+
+                <section id="lanches-refeicoes">
+                    <h1>Lanches e Refeições</h1>
+                    <label for="pizza">Pizza</label>
+                    <select name="pizza" id="pizza">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="lasanha">Lasanha</label>
+                    <select name="lasanha" id="lasanha">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="frango">Frango a Parmegiana</label>
+                    <select name="frango" id="frango">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="salada">Salada Caesar</label>
+                    <select name="salada" id="salada">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="costela">Costela no Bafo</label>
+                    <select name="costela" id="costela">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section><br />
+
+
+
+                <section id="bebidas">
+                    <h1>Bebidas</h1>
+                    <label for="vinho">Vinho</label>
+                    <select name="vinho" id="vinho">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="refrigerante">Refrigerante</label>
+                    <select name="refrigerante" id="refrigerante">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="agua">Água</label>
+                    <select name="agua" id="agua">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="suco">Suco</label>
+                    <select name="suco" id="suco">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="energetico">Energético</label>
+                    <select name="energetico" id="energetico">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section><br />
+
+
+
+                <section id="sobremesas">
+                    <h1>Sobremesas</h1>
+                    <label for="sorvete">Sorvete 2L</label>
+                    <select name="sorvete" id="sorvete">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="bolo">Bolo de chocolate</label>
+                    <select name="bolo" id="bolo">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="acai">Açaí 1L</label>
+                    <select name="acai" id="acai">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="rosquinha">Rosquinha recheada</label>
+                    <select name="rosquinha" id="rosquinha">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+
+                    <label for="mil-folhas">Mil folhas</label>
+                    <select name="mil-folhas" id="mil-folhas">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <br />
+                <input type="submit" id="submit-pedido" onclick="fecharPedido(event)">
+            </form>
+            <section id="caixa-pagamento">
+                <h1>Revisão do Pedido</h1>
+                <p>Confirme se os itens do seu pedido estão corretos:</p></br>
+                <ul id="lista-revisao">
+
+                </ul>
+            </br>
+                <button type="submit" onclick="confirmarPedido(event)">Confirmar pedido</button>
+
+
+            </section>
+        </section>
     </main>
 
     <footer>
-        <section class="footer-1" id="icons-footer">
-            <a href="https://instagram.com" target="_blank"><img src="Medias/instagram-icone.png" height="42.5px"
-                    width="42.5px" id="instagram-footer"></a>
-            <a href="https://facebook.com" target="_blank"><img src="Medias/facebook-icone.png" height="42.5px"
-                    width="42.5px" id="facebook-footer" class="facebook-icone"></a>
-            <a href="https://whatsapp.com" target="_blank"><img src="Medias/whatsapp-icone.png" height="42.5px"
-                    width="45px" id="whatsapp-footer"></a>
-        </section>
+        <section class="footer-1">
+            <section id="icons-footer">
+                <a href="https://instagram.com" target="_blank"><img src="Medias/instagram-icone.png" height="42.5px"
+                        width="42.5px" id="instagram-footer"></a>
+                <a href="https://facebook.com" target="_blank"><img src="Medias/facebook-icone.png" height="42.5px"
+                        width="42.5px" id="facebook-footer" class="facebook-icone"></a>
+                <a href="https://whatsapp.com" target="_blank"><img src="Medias/whatsapp-icone.png" height="42.5px"
+                        width="45px" id="whatsapp-footer"></a>
+            </section>
 
-        <section class="footer-cnpj">
-
-            <article id="dados-cnpj">CNPJ: 01.001.001/0001-01</br>
+            <p id="dados-cnpj">CNPJ: 01.001.001/0001-01</br>
                 Endereço: Praça Cristiano Ottoni, S/N</br>
                 Rio de Janeiro/RJ - Brasil</br>
                 Todos os direitos reservados ©
-            </article>
+            </p>
         </section>
 
         <section class="footer-2">
-            <a href="#" id="topo-pagina"><img src="Medias/iconTopoPagina.png" height="50px" width="50px"><i
-                    aria-hidden="true"><strong></strong></i></a>
+            <a href="FAQ.html" target="_blank"><strong>FAQ</strong></a>
         </section>
+        <a href="#" id="topo-pagina"><img src="Medias/iconTopoPagina.png" id="icone-topo"><i
+                aria-hidden="true"><strong></strong></i></a>
     </footer>
 </body>
 
