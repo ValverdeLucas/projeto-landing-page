@@ -15,11 +15,15 @@
 <body>
 
     <header>
-        <img src="Medias/logo.jpg" alt="logo 4Food" height="200px" width="200px" id="logo-topo">
-        <a href="#quem-somos"><strong>Quem somos</strong></a>
-        <a href="#nossa-loja"><strong>Nossa loja</strong></a>
-        <a href="#localizacao"><strong>Onde estamos?</strong></a>
-        <section id="icons">
+        <a href="./index.html"><img src="Medias/logo.jpg" alt="logo 4Food" id="logo-topo"></a> 
+
+        <section id="navegacao">
+            <a href="#quem-somos"><strong>Quem somos</strong></a>
+            <a href="#nossa-loja"><strong>Nossa loja</strong></a>
+            <a href="#localizacao"><strong>Onde estamos?</strong></a>
+        </section>
+
+        <section id="icons-header">
             <a href="https://instagram.com" target="_blank"><img src="Medias/instagram-icone.png" height="40px"
                     width="40px" id="instagram-header"></a>
             <a href="https://facebook.com" target="_blank"><img src="Medias/facebook-icone.png" height="40px"
@@ -27,38 +31,43 @@
             <a href="https://whatsapp.com" target="_blank"><img src="Medias/whatsapp-icone.png" height="40px"
                     width="40px" id="whatsapp-header"></a>
         </section>
-
-        <nav></nav>
     </header>
 
     <main>
-        <section class="galeria">
-            <img src="./Medias/Parte Principal - Galeria/foto-1.png" id="img1">
-            <img src="./Medias/Parte Principal - Galeria/foto-2.png" id="img2">
-            <img src="./Medias/Parte Principal - Galeria/foto-3.png" id="img3">
-            <img src="./Medias/Parte Principal - Galeria/foto-4.png" id="img4">
-            <img src="./Medias/Parte Principal - Galeria/foto-5.png" id="img5">
-            <img src="./Medias/Parte Principal - Galeria/foto-6.png" id="img6">
+        <section class="galeria" fade>
+            <img src="./Medias/Parte Principal - Galeria/foto-1.png" class="galeria-slide" id="img1">
+            <img src="./Medias/Parte Principal - Galeria/foto-2.png" class="galeria-slide" id="img2">
+            <img src="./Medias/Parte Principal - Galeria/foto-3.png" class="galeria-slide" id="img3">
+            <img src="./Medias/Parte Principal - Galeria/foto-4.png" class="galeria-slide" id="img4">
+            <img src="./Medias/Parte Principal - Galeria/foto-5.png" class="galeria-slide" id="img5">
+            <img src="./Medias/Parte Principal - Galeria/foto-6.png" class="galeria-slide" id="img6">
         </section></br></br>
 
         <section class="segunda-parte">
             <article id="quem-somos">
-                <h1>Quem Somos</h1></br>
+                <h1>Quem Somos</h1>
                 <p> Com mais de 10 anos de experiência e já consolidados no meio presencial, nós da 4Food estamos
-                    buscando ampliar e digitalizar a nossa operação para dar mais praticidade a você!
+                    buscando ampliar e digitalizar a nossa operação para dar mais praticidade aos nossos clientes!
                     </br> </br>
 
-                    Criamos um sistema de compras e entregas recorrentes por aplicativo para os nossos clientes, dessa
-                    maneira conseguiremos dar mais agilidade nas suas compras do mês ou em seu dia a dia!
+                    Com isso em mente, criamos um sistema de compras e entregas recorrentes por aplicativo para você,
+                    dessa
+                    maneira conseguiremos dar mais agilidade e autonomia em suas compras diárias ou mensais!
                     </br> </br>
-                    Com o nosso novo site e aplicação, você poderá fazer as suas compras de supermercado de maneira
+                    Com o nosso novo site e aplicativo, você poderá fazer as suas compras de supermercado de maneira
                     online em poucos cliques, além de poder contar com o nosso extenso cardápio de comidas prontas, com
                     pedidos programáveis, evitando que você precise se preocupar em fazer o seu pedido todos os dias!
                 </p>
+                <article id="icons-store">
+                    <a href="https://play.google.com/store/apps" target="_blank" class="google-play"><img
+                            src="./Medias/google-play.png" class="google-play"></a>
+                    <a href="https://www.apple.com/br/app-store/" target="_blank" class="app-store"><img
+                            src="./Medias/app-store.png" class="google-play"></a>
+                </article>
 
             </article>
 
-            <img src="./Medias/Segunda Parte - Carrossel/equipe.png" id="equipe" width="610px" height="213">
+            <img src="./Medias/Segunda Parte - Carrossel/equipe.png" id="equipe">
 
             <article class="carrossel" id="novidades">
                 <h1>Novidades</h1>
@@ -70,26 +79,24 @@
                     <li>E muito mais!</li>
                 </ul>
             </article>
-            <img src="./Medias/Segunda Parte - Carrossel/novidades.png" class="carrossel" id="img-carrossel-1"
-                width="290px" height="213px">
+            <img src="./Medias/Segunda Parte - Carrossel/novidades.png" class="carrossel" id="img-carrossel-1">
             <article class="carrossel" id="nossa-loja">
                 <h1>Nossa Loja</h1>
                 <p>Visite também a nossa loja presencial! </br><a href="#localizacao">Localizada no endereço</a>:
-                </br>
-                   </br>Praça Cristiano Ottoni, S/N - Rio de Janeiro/RJ</br>
+                    </br>
+                    </br>Praça Cristiano Ottoni, S/N - Rio de Janeiro/RJ</br>
                     Horário de Funcionamento: Todos os dias - 10h às 22h
 
                 </p>
             </article>
-            <img src="./Medias/Segunda Parte - Carrossel/nossa-loja.png" class="carrossel" id="img-carrossel-2"
-                width="290px" height="213px">
+            <img src="./Medias/Segunda Parte - Carrossel/nossa-loja.png" class="carrossel" id="img-carrossel-2">
             <article class="carrossel" id="pedido">
                 <h1>Peça já!</h1>
-                <p>Aproveite a novidade e peça o seu pão quentinho, suas verduras fresquinhas, seu doce favorito ou tudo junto. É rápido e prático!</p>
+                <p>Aproveite a novidade e peça o seu pão quentinho, suas verduras fresquinhas, seu doce favorito ou tudo
+                    junto. É rápido e prático!</p></br>
                 <a href="PecaJa.html" target="_blank" id="pedido-link">Faça seu pedido!</a>
             </article>
-            <img src="./Medias/Segunda Parte - Carrossel/peca-ja.png" class="carrossel" id="img-carrossel-3"
-                width="290px" height="213px">
+            <img src="./Medias/Segunda Parte - Carrossel/peca-ja.png" class="carrossel" id="img-carrossel-3">
         </section></br></br>
 
         <section class="terceira-parte">
@@ -97,8 +104,8 @@
                 <h1>Onde Estamos?</h1></br>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1891.4584056409751!2d-43.19065531415086!3d-22.905087491331617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1697836514423!5m2!1spt-BR!2sbr"
-                    width="575px" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    id="mapa"></iframe>
             </article>
             <article class="sobre" id="contato">
 
@@ -109,8 +116,7 @@
 
                     <input type="text" name="nome" id="nome" placeholder="Nome completo"></br>
                     <input type="text" name="email" id="email" placeholder="E-mail"></br>
-                    <input type="tel" name="telefone" id="telefone"
-                        placeholder="(DDD) xxxx-xxxxx"></br>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(DDD) xxxx-xxxxx"></br>
                     <select name="assunto" id="assunto">
                         <option value="sugestao">Sugestão</option>
                         <option value="reclamacao">Reclamação</option>
@@ -126,30 +132,29 @@
     </main>
 
     <footer>
-        <section class="footer-1" id="icons-footer">
-            <a href="https://instagram.com" target="_blank"><img src="Medias/instagram-icone.png" height="42.5px"
-                    width="42.5px" id="instagram-footer"></a>
-            <a href="https://facebook.com" target="_blank"><img src="Medias/facebook-icone.png" height="42.5px"
-                    width="42.5px" id="facebook-footer" class="facebook-icone"></a>
-            <a href="https://whatsapp.com" target="_blank"><img src="Medias/whatsapp-icone.png" height="42.5px"
-                    width="45px" id="whatsapp-footer"></a>
-        </section>
+        <section class="footer-1">
+            <section id="icons-footer">
+                <a href="https://instagram.com" target="_blank"><img src="Medias/instagram-icone.png" height="42.5px"
+                        width="42.5px" id="instagram-footer"></a>
+                <a href="https://facebook.com" target="_blank"><img src="Medias/facebook-icone.png" height="42.5px"
+                        width="42.5px" id="facebook-footer" class="facebook-icone"></a>
+                <a href="https://whatsapp.com" target="_blank"><img src="Medias/whatsapp-icone.png" height="42.5px"
+                        width="45px" id="whatsapp-footer"></a>
+            </section>
 
-        <section class="footer-cnpj">
-
-            <article id="dados-cnpj">CNPJ: 01.001.001/0001-01</br>
+            <p id="dados-cnpj">CNPJ: 01.001.001/0001-01</br>
                 Endereço: Praça Cristiano Ottoni, S/N</br>
                 Rio de Janeiro/RJ - Brasil</br>
                 Todos os direitos reservados ©
-            </article>
+            </p>
         </section>
 
         <section class="footer-2">
-            <a href="FAQ.html" target="_blank"><strong>FAQ (Perguntas Frequentes)</strong></a>
+            <a href="FAQ.html" target="_blank"><strong>FAQ</strong></a>
             <a href="PecaJa.html" target="_blank"><strong>Peça já!</strong></a>
-            <a href="#" id="topo-pagina"><img src="Medias/iconTopoPagina.png" height="50px" width="50px"><i
-                    aria-hidden="true"><strong></strong></i></a>
         </section>
+        <a href="#" id="topo-pagina"><img src="Medias/iconTopoPagina.png" id="icone-topo"><i
+                aria-hidden="true"><strong></strong></i></a>
     </footer>
 </body>
 
